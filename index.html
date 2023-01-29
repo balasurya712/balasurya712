@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 10;
+} */
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 15px;
+}
+.column1 {
+  float: left;
+  width: 70%;
+  padding: 25px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 25px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.img1{
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+}
+p {
+  animation-duration: 4s;
+  animation-name: fadein;
+}
+@keyframes fadein {
+  from {
+    margin-top: 10%;
+     opacity: 0; 
+  }
+
+  to {
+    margin-top: 0%;
+     opacity: 1; 
+  }
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+body {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: 10%;
+     opacity: 0; 
+  }
+
+  to {
+    margin-top: 0%;
+     opacity: 1; 
+  }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+
+  .column {
+    width: 100%;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<ul class="topnav">
+  <li><a>About Me</a></li>
+  <li class="right"><a href="porduct.html">Project Details</a></li>
+  
+  <li class="right"><a href="" class="active">Home</a></li>
+</ul>
+
+<div class="row">
+  <div class="column">
+    <img src="profile.jpg" class="img1">
+    <h2>Balasurya M</h2>
+    <p>Hands-on Information Technology enrolled in Bannari Amman Institute of Technology.
+       Comprehensive knowledge of programming, Web development.</p>
+       <h3>PERSONAL INFORMATION</h3>
+       <hr>
+       <p>Date of Birth: 07.12.2002<br>
+        Nationality: Indian<br>
+        Father's Name: Mohanasundaram<br>
+        Mother's Name: Shanthi M</p>
+       <p><img src="mail_icon.png" height="15" width="20">  balasurya.it20@bitsathy.ac.in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; balasuryam712@gmail.com</p>
+  </div>
+  
+  <div class="column1">
+    <h2>CAREER OBJECTIVE</h2><hr>
+    <p>Seeking a role which allows consistent learning and perfecting my skills and to secure employment
+       with a reputable company where I can make use of my interpersonal skills to achieve the goals of the 
+       company.</p>
+  
+       
+  <div class="column2">
+    <h2>EDUCATION</h2>
+    <hr style="height: 5px; display: block;background: #000;">
+    <h3>Bannari Amman Institute of Technology</h3>
+    <hr style="height: 2px;width: 85%;margin-left: 0px; display: block;background: #000;">
+    <p>B.Tech  Information Technology<br>
+      Expected to graduate in 2024<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 9.11 CGPA (up-to 4th semester)</p>
+
+    <h3>Bharani Vidhyalaya Senior Secondary School<br> (CBSE)</h3>
+    <hr style="height: 2px;width: 85%;margin-left: 0px; display: block;background: #000;">
+    <p>Graduated in 2020(12th)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Prevailed an aggregate of 88.6%<br>
+Graduated in 2018(10th)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Prevailed an aggregate of 79.6%<br>
+</p>
+
+  </div>
+  <div class="column2">
+    <h2>TECHNICAL skills</h2>
+    <hr style="height: 5px; display: block;background: #000;">
+    <p>C Language<br>
+      Python<br>
+      Java<br>
+      Flutter<br>
+      Web Development - Basic<br>
+      Mathematics</p>
+
+      <h2>Soft skills</h2>
+    <hr style="height: 5px; display: block;background: #000;">
+    <p>Decision Making<br>
+      Time Management<br>
+      Team Work<br>
+      Adaptability</p>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
+
+
